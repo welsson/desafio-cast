@@ -44,13 +44,17 @@ Com a aplicação rodando, você pode explorar e testar todos os endpoints atrav
 ## Passo a Passo
 
 1. **Clone o repositório:**
+   
     git clone https://github.com/welsson/desafio-cast.git
 
-2. **Navege até o diretório do projeto:**
+3. **Navege até o diretório do projeto:**
+   
     cd cast
 
-3. **Execute com Docker Compose:**
+4. **Execute com Docker Compose:**
+   
    docker compose up -d
    
-4. **Execute a aplicação com o maven:** (Desenvolvimento)
+6. **Execute a aplicação com o maven:** (Desenvolvimento)
+   
    ./mvnw spring-boot:run
