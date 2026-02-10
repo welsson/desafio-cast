@@ -39,8 +39,9 @@ Com a aplicação rodando, você pode explorar e testar todos os endpoints atrav
 * Docker e Docker Compose instalados.
 * Java 21 ou superior.
 * Maven
+---
 
-### Passo a Passo
+## Passo a Passo
 
 1. **Clone o repositório:**
     git clone https://github.com/welsson/desafio-cast.git
