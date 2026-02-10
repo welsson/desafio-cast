@@ -53,5 +53,3 @@ Com a aplicação rodando, você pode explorar e testar todos os endpoints atrav
    
 4. **Execute a aplicação com o maven:** (Desenvolvimento)
    ./mvnw spring-boot:run
-
-A aplicação estará disponível em http://localhost:8520
