@@ -1,12 +1,10 @@
-# Estágio 1: Build da aplicação
-FROM maven:3.9-eclipse-temurin-17 AS build
-WORKDIR /app
+# Estágio de Build (Compilação)
+FROM maven:3.9.6-eclipse-temurin-21-jammy AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Estágio 2: Execução
-FROM eclipse-temurin:17-jre-alpine
-WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
-EXPOSE 8080
+# Estágio de Runtime (Execução)
+FROM eclipse-temurin:21-jre-jammy
+COPY --from=build /target/*.jar app.jar
+EXPOSE 8520
 ENTRYPOINT ["java", "-jar", "app.jar"]
