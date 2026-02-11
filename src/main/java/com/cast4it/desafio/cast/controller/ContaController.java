@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/v1/contas")
 @RequiredArgsConstructor
 @Tag(name = "Contas", description = "Endpoints para gerenciamento de contas e operações bancárias")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class ContaController {
 
     private final ContaService contaService;
